@@ -4,6 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Circle.h</itemPath>
+      <itemPath>Rectangle.h</itemPath>
+      <itemPath>Shape.h</itemPath>
+      <itemPath>Square.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +16,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Circle.cpp</itemPath>
+      <itemPath>Rectangle.cpp</itemPath>
+      <itemPath>Shape.cpp</itemPath>
+      <itemPath>Square.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -36,6 +44,22 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Circle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Circle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Rectangle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Rectangle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Shape.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Shape.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Square.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Square.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -59,6 +83,22 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Circle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Circle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Rectangle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Rectangle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Shape.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Shape.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Square.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Square.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
