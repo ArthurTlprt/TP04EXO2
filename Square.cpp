@@ -17,10 +17,11 @@ Square::~Square() {
 }
 
 void Square::SetLength(int length) {
-    this->length = length;
+    Rectangle::SetHeight(length);
+    Rectangle::SetWidth(length);
 }
 
 int Square::GetLength() const {
-    return length;
+    return Rectangle::GetHeight();
 }
 

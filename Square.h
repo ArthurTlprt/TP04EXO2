@@ -11,16 +11,13 @@
 #include "Shape.h"
 #include "Rectangle.h"
 
-class Square : public Shape{
+class Square : public Shape, public Rectangle{
 public:
     Square();
     Square(const Square& orig);
     virtual ~Square();
     void SetLength(int length);
     int GetLength() const;
-    
-private:
-    int length;
 };
 
 #endif	/* SQUARE_H */
