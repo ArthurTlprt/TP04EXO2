@@ -6,33 +6,47 @@
  */
 #include <cmath>
 #include "Circle.h"
+#include <iostream>
+
+using namespace std;
 
 
 Circle::Circle() {
-    this->radius  = 0.0;
+    setRadius(0.0);
 }
 Circle::Circle(const Circle& orig) {
 }
-Circle::Circle(int radius){
-    this->radius = radius;
+Circle::Circle(float radius){
+    setRadius(radius);
+    setPerimeter();
+    setArea();
 }
 Circle::~Circle() {
 }
 
-void Circle::setRadius(int radius) {
+void Circle::setRadius(float radius) {
     this->radius = radius;
+    setPerimeter();
+    setArea();
 }
-int Circle::getRadius() const{
+float Circle::getRadius() const{
     return this->radius;
 }
-int Circle::getArea() const{
-    return M_PI * this->radius * this->radius;
-}
-int Circle::getPerimeter() const {
-    return 2 * M_PI * this->radius;
-}
-void Circle::print() {
 
+void Circle::print() {
+    cout << "this circle : " << endl;
+    cout << Shape::getId() << endl;
+    cout << Shape::getPerimeter() << endl;
+    cout << Shape::getArea() << endl;
+    cout << getRadius() << endl;
+}
+
+void Circle::setArea() {
+    Shape::setArea(radius * radius * M_PI);
+}
+
+void Circle::setPerimeter() {
+    Shape::setPerimeter(radius * 2 * M_PI);
 }
 
 

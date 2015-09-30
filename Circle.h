@@ -13,15 +13,16 @@
 class Circle :public Shape{
 private:
     float radius;
+    
+    void setPerimeter();
+    void setArea();
 public:
     Circle();
     Circle(const Circle& orig);
-    Circle(int radius);
+    Circle(float radius);
     virtual ~Circle();
-    void setRadius(int radius);
-    int getRadius()const;
-    int getArea()const;
-    int getPerimeter()const;
+    void setRadius(float radius);
+    float getRadius()const;
     void print();
 };
 

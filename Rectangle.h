@@ -12,17 +12,20 @@
 
 class Rectangle : public Shape{
 private:
-    int height;
-    int width;
+    float height;
+    float width;
 public:
     Rectangle();
     Rectangle(const Rectangle& orig);
-    Rectangle(int height, int width);
+    Rectangle(float height, float width);
     virtual ~Rectangle();
-    void SetHeight(int height);
-    int GetHeight() const;
-    void SetWidth(int width);
-    int GetWidth() const;
+    void SetHeight(float height);
+    float GetHeight() const;
+    void SetWidth(float width);
+    float GetWidth() const;
+    void setArea();
+    void setPerimeter();
+    void print();
 };
 
 #endif	/* RECTANGLE_H */

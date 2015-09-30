@@ -17,10 +17,14 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    Circle circle;
-    Rectangle rectangle;
-    Square square;
+    Circle circle(8.0);
+    Rectangle rectangle(2.0, 4.0);
+    Square square(2.0);
 
+    circle.print();
+    rectangle.print();
+    square.print();
+    
     return 0;
 }
 

@@ -13,6 +13,8 @@ private:
     int id;
     int color;
     static int counter;
+    float area;
+    float perimeter;
 public:
     Shape();
     Shape(const Shape& orig);
@@ -22,6 +24,10 @@ public:
     int getColor() const;
     void setId(int id);
     int getId() const;
+    float getArea()const;
+    float getPerimeter()const;
+    void setPerimeter(float perimeter);
+    void setArea(float area);
 };
 
 #endif	/* SHAPE_H */

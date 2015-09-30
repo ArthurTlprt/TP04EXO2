@@ -8,16 +8,18 @@
 #ifndef SQUARE_H
 #define	SQUARE_H
 
-#include "Shape.h"
+
 #include "Rectangle.h"
 
-class Square : public Shape, public Rectangle{
+class Square : public Rectangle{
 public:
     Square();
     Square(const Square& orig);
+    Square(float length);
     virtual ~Square();
-    void SetLength(int length);
-    int GetLength() const;
+    void SetLength(float length);
+    float GetLength() const;
+    void print();
 };
 
 #endif	/* SQUARE_H */

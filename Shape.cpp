@@ -6,8 +6,11 @@
  */
 
 #include "Shape.h"
+#include <iostream>
 
-int Shape::counter = -1;
+using namespace std;
+
+int Shape::counter = 0;
 
 Shape::Shape() {
     id = counter++;
@@ -21,7 +24,7 @@ Shape::~Shape() {
 }
 
 void Shape::print() {
-
+    cout << id << endl;
 }
 
 void Shape::setColor(int color) {
@@ -39,5 +42,22 @@ void Shape::setId(int id) {
 int Shape::getId() const {
     return id;
 }
+
+float Shape::getArea() const {
+    return this->area;
+}
+
+float Shape::getPerimeter() const {
+    return this->perimeter;
+}
+
+void Shape::setPerimeter(float perimeter) {
+    this->perimeter = perimeter;
+}
+
+void Shape::setArea(float area) {
+    this->area = area;
+}
+
 
 
